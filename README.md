@@ -79,4 +79,5 @@ Chọn React, TypeScript, Vite cho frontend đích; Node.js/Express và MongoDB 
 Mỗi quy trình hoàn thành sẽ có tài liệu Word nêu mục tiêu, công việc thực tế, đầu ra, bằng chứng, phần còn chờ và bước tiếp theo. Không ghi công việc dự kiến hoặc kết quả giả lập thành kết quả thực hiện. Yêu cầu này được lưu trong `docs/reporting-convention.md`.
 #   D A T N _ T h u a n _ 2 2 5 1 2 2 0 0 4 7  
  #   D A T N _ T h u a n _ 2 2 5 1 2 2 0 0 4 7  
+ #   D A T N _ T h u a n _ 2 2 5 1 2 2 0 0 4 7  
  
