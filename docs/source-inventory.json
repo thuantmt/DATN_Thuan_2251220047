@@ -1,0 +1,52 @@
+[
+  {
+    "path": "AI-Prompt/Task 2/PROMPT_STAGE2_DIAGNOSTIC.md",
+    "size": 11739,
+    "sha256": "33169574cb4a3af3994e6b7091cc85e14990b3da5232f686d0e433048eacb6af"
+  },
+  {
+    "path": "AI-Prompt/Task 2/schema-stage1-examiner.json",
+    "size": 10489,
+    "sha256": "5ac96ac3f03a55272648b17cdd1881d195e482b0bd4525d4895d0b1bca9fa11c"
+  },
+  {
+    "path": "AI-Prompt/Task 2/schema-stage2-diagnostic.json",
+    "size": 12355,
+    "sha256": "6121af843066cd4ad622b991e3301e774207281f2757b9ee4d8839c86c64c40a"
+  },
+  {
+    "path": "AI-Prompt/Task 2/PROMPT_STAGE1_AI_EXAMINER.md",
+    "size": 12889,
+    "sha256": "8a47fe86b55a59fb8b68532479f69539ff974e1352242e24f8b052f97cfd5689"
+  },
+  {
+    "path": "AI-Prompt/Task 1/schema-stage1-examiner.json",
+    "size": 14611,
+    "sha256": "01d00d685502ec5f9881341dbe5c5e29305336a506e399444f62b70a8fd5517e"
+  },
+  {
+    "path": "AI-Prompt/Task 1/schema-stage2-diagnostic.json",
+    "size": 11953,
+    "sha256": "a604ea496959cc044bce8c5bec5163ddb81276d04bacd3d3fd05c2185566a571"
+  },
+  {
+    "path": "AI-Prompt/Task 1/Huong-dan.md",
+    "size": 4402,
+    "sha256": "3d09a83b3475d45b66b19f2f7e78080886939006d2ae4930d70bd0247dc4e15e"
+  },
+  {
+    "path": "AI-Prompt/Task 1/PROMPT_STAGE2_DIAGNOSTIC.md",
+    "size": 11763,
+    "sha256": "c3cf3f8f551c5f894c6d38234226f31a123e5b9775233a2da392e412a89b3265"
+  },
+  {
+    "path": "AI-Prompt/Task 2/Huong-dan.md",
+    "size": 4994,
+    "sha256": "2c4aa3115fa2d6a526ac3b14adbba674cbf80ddf2b6e7db1ca8263bc2f306abc"
+  },
+  {
+    "path": "AI-Prompt/Task 1/PROMPT_STAGE1_AI_EXAMINER.md",
+    "size": 13640,
+    "sha256": "e59c67ae5ee977c5a1d555043401009d83476175565a14e149c8cc8067aa4148"
+  }
+]

@@ -1,0 +1,15 @@
+import type { State, Topic, Essay, Version } from './react/src/types';
+export const STORAGE_KEY: string;
+export const SAMPLE_TOPICS: Topic[];
+export const SAMPLE_USERS: State['users'];
+export function initialState(): State;
+export function loadState(storage?: Pick<Storage, 'getItem'>): State;
+export function saveState(state: State, storage?: Pick<Storage, 'setItem'>): void;
+export function countWords(value: string): number;
+export function createEssay(state: State, topicId: string, body: string): Essay;
+export function appendVersion(essay: Essay, body: string): Version;
+export function canSubmit(topic: Topic | undefined, body: string): string;
+export function latestVersion(essay: Essay): Version;
+export function latestVersion(essay: Essay | undefined): Version | undefined;
+export function essayTitle(state: State, essay: Essay): string;
+export function formatDate(iso: string): string;

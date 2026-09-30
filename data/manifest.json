@@ -1,0 +1,19 @@
+{
+  "samples": 6,
+  "labelled_research_samples": 0,
+  "images": 3,
+  "purpose": "technical_smoke_tests_only",
+  "word_counts": {
+    "T1-BAR-01": 156,
+    "T1-LINE-02": 164,
+    "T1-PROCESS-03": 167,
+    "T2-OPINION-01": 285,
+    "T2-DISCUSSION-02": 291,
+    "T2-TWO-PART-03": 289
+  },
+  "sha256": {
+    "T1-BAR-01.png": "d3830774b2962cbf47d12a6953c93bbb62c91f2e4c0d479bb21c0437b3fd6279",
+    "T1-PROCESS-03.png": "951487f79f122a836400a45a97418cce0d12ffe1e36ff261180cc1e70794acbd",
+    "T1-LINE-02.png": "3679fb8abff584643e7942dc8dad91a9d043411e20f381f25728e4297ef5563b"
+  }
+}

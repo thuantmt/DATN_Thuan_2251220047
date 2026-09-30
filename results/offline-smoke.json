@@ -1,0 +1,59 @@
+{
+  "mode": "offline",
+  "recorded_at": "2026-09-14T04:59:40.655901+00:00",
+  "prompt_version": "0.2.0",
+  "synthetic_inputs": true,
+  "real_ai_calls": 0,
+  "results": [
+    {
+      "sample_id": "T1-BAR-01",
+      "task": 1,
+      "word_count": 156,
+      "source": "artificial_contract_fixture_not_a_score",
+      "status": "contract_pass",
+      "indicator_count": 24
+    },
+    {
+      "sample_id": "T1-LINE-02",
+      "task": 1,
+      "word_count": 164,
+      "source": "artificial_contract_fixture_not_a_score",
+      "status": "contract_pass",
+      "indicator_count": 24
+    },
+    {
+      "sample_id": "T1-PROCESS-03",
+      "task": 1,
+      "word_count": 167,
+      "source": "artificial_contract_fixture_not_a_score",
+      "status": "contract_pass",
+      "indicator_count": 24
+    },
+    {
+      "sample_id": "T2-OPINION-01",
+      "task": 2,
+      "word_count": 285,
+      "source": "artificial_contract_fixture_not_a_score",
+      "status": "contract_pass",
+      "indicator_count": 72
+    },
+    {
+      "sample_id": "T2-DISCUSSION-02",
+      "task": 2,
+      "word_count": 291,
+      "source": "artificial_contract_fixture_not_a_score",
+      "status": "contract_pass",
+      "indicator_count": 72
+    },
+    {
+      "sample_id": "T2-TWO-PART-03",
+      "task": 2,
+      "word_count": 289,
+      "source": "artificial_contract_fixture_not_a_score",
+      "status": "contract_pass",
+      "indicator_count": 72
+    }
+  ],
+  "status": "passed",
+  "note": "Contract checks are not evidence of scoring accuracy. Live adapter has not been verified until an actual successful request."
+}

@@ -1,0 +1,434 @@
+[
+  {
+    "id": "TR01",
+    "criterion": "TR",
+    "name": "task_understanding",
+    "definition": "Addresses the actual central question"
+  },
+  {
+    "id": "TR02",
+    "criterion": "TR",
+    "name": "requirement_coverage",
+    "definition": "Covers each explicit requirement"
+  },
+  {
+    "id": "TR03",
+    "criterion": "TR",
+    "name": "position_clarity",
+    "definition": "States an identifiable position where required"
+  },
+  {
+    "id": "TR04",
+    "criterion": "TR",
+    "name": "position_consistency",
+    "definition": "Maintains or explains the position throughout"
+  },
+  {
+    "id": "TR05",
+    "criterion": "TR",
+    "name": "idea_relevance",
+    "definition": "Selects ideas relevant to the question"
+  },
+  {
+    "id": "TR06",
+    "criterion": "TR",
+    "name": "idea_clarity",
+    "definition": "Expresses main ideas intelligibly"
+  },
+  {
+    "id": "TR07",
+    "criterion": "TR",
+    "name": "idea_development",
+    "definition": "Develops rather than merely lists ideas"
+  },
+  {
+    "id": "TR08",
+    "criterion": "TR",
+    "name": "explanation",
+    "definition": "Explains how or why a claim holds"
+  },
+  {
+    "id": "TR09",
+    "criterion": "TR",
+    "name": "reasoning",
+    "definition": "Connects premises and conclusions logically"
+  },
+  {
+    "id": "TR10",
+    "criterion": "TR",
+    "name": "support",
+    "definition": "Supports claims with relevant detail"
+  },
+  {
+    "id": "TR11",
+    "criterion": "TR",
+    "name": "example_relevance",
+    "definition": "Uses relevant examples when helpful"
+  },
+  {
+    "id": "TR12",
+    "criterion": "TR",
+    "name": "example_specificity",
+    "definition": "Gives sufficiently concrete support"
+  },
+  {
+    "id": "TR13",
+    "criterion": "TR",
+    "name": "requirement_balance",
+    "definition": "Develops required parts adequately without demanding equal length"
+  },
+  {
+    "id": "TR14",
+    "criterion": "TR",
+    "name": "qualification",
+    "definition": "Qualifies overly broad claims where needed"
+  },
+  {
+    "id": "TR15",
+    "criterion": "TR",
+    "name": "counterargument",
+    "definition": "Handles opposing arguments when applicable"
+  },
+  {
+    "id": "TR16",
+    "criterion": "TR",
+    "name": "conclusion_alignment",
+    "definition": "Aligns an ending with the position if an ending is present"
+  },
+  {
+    "id": "TR17",
+    "criterion": "TR",
+    "name": "unsupported_claims",
+    "definition": "Avoids unsupported factual assumptions"
+  },
+  {
+    "id": "TR18",
+    "criterion": "TR",
+    "name": "response_focus",
+    "definition": "Avoids repetition or irrelevant digressions"
+  },
+  {
+    "id": "CC01",
+    "criterion": "CC",
+    "name": "paragraph_purpose",
+    "definition": "Each paragraph has a discernible purpose"
+  },
+  {
+    "id": "CC02",
+    "criterion": "CC",
+    "name": "logical_sequence",
+    "definition": "Orders ideas intelligibly"
+  },
+  {
+    "id": "CC03",
+    "criterion": "CC",
+    "name": "paragraph_unity",
+    "definition": "Keeps related ideas together"
+  },
+  {
+    "id": "CC04",
+    "criterion": "CC",
+    "name": "progression",
+    "definition": "Develops a coherent overall progression"
+  },
+  {
+    "id": "CC05",
+    "criterion": "CC",
+    "name": "sentence_links",
+    "definition": "Connects neighbouring sentences meaningfully"
+  },
+  {
+    "id": "CC06",
+    "criterion": "CC",
+    "name": "referencing",
+    "definition": "Makes pronoun references clear"
+  },
+  {
+    "id": "CC07",
+    "criterion": "CC",
+    "name": "substitution",
+    "definition": "Avoids confusing repetition or substitutions"
+  },
+  {
+    "id": "CC08",
+    "criterion": "CC",
+    "name": "conjunction_meaning",
+    "definition": "Uses conjunctions with an appropriate logical meaning"
+  },
+  {
+    "id": "CC09",
+    "criterion": "CC",
+    "name": "linker_naturalness",
+    "definition": "Uses linking language naturally"
+  },
+  {
+    "id": "CC10",
+    "criterion": "CC",
+    "name": "linker_repetition",
+    "definition": "Avoids mechanical repetition of linkers"
+  },
+  {
+    "id": "CC11",
+    "criterion": "CC",
+    "name": "over_linking",
+    "definition": "Avoids unnecessary connectors"
+  },
+  {
+    "id": "CC12",
+    "criterion": "CC",
+    "name": "under_linking",
+    "definition": "Makes needed relationships explicit"
+  },
+  {
+    "id": "CC13",
+    "criterion": "CC",
+    "name": "topic_development",
+    "definition": "Connects details to the paragraph focus"
+  },
+  {
+    "id": "CC14",
+    "criterion": "CC",
+    "name": "transitions",
+    "definition": "Maintains understandable paragraph transitions"
+  },
+  {
+    "id": "CC15",
+    "criterion": "CC",
+    "name": "comparison_organisation",
+    "definition": "Organises comparisons when relevant"
+  },
+  {
+    "id": "CC16",
+    "criterion": "CC",
+    "name": "information_grouping",
+    "definition": "Groups information meaningfully"
+  },
+  {
+    "id": "CC17",
+    "criterion": "CC",
+    "name": "lexical_cohesion",
+    "definition": "Uses lexical reference consistently"
+  },
+  {
+    "id": "CC18",
+    "criterion": "CC",
+    "name": "overall_readability",
+    "definition": "Reader can follow the relationships between ideas"
+  },
+  {
+    "id": "LR01",
+    "criterion": "LR",
+    "name": "range",
+    "definition": "Uses a sufficient vocabulary range"
+  },
+  {
+    "id": "LR02",
+    "criterion": "LR",
+    "name": "precision",
+    "definition": "Chooses words that express the intended meaning"
+  },
+  {
+    "id": "LR03",
+    "criterion": "LR",
+    "name": "appropriacy",
+    "definition": "Uses words appropriate to context"
+  },
+  {
+    "id": "LR04",
+    "criterion": "LR",
+    "name": "flexibility",
+    "definition": "Paraphrases without changing meaning"
+  },
+  {
+    "id": "LR05",
+    "criterion": "LR",
+    "name": "collocation",
+    "definition": "Uses appropriate word combinations"
+  },
+  {
+    "id": "LR06",
+    "criterion": "LR",
+    "name": "word_formation",
+    "definition": "Controls derivation and word forms"
+  },
+  {
+    "id": "LR07",
+    "criterion": "LR",
+    "name": "spelling",
+    "definition": "Spells words accurately"
+  },
+  {
+    "id": "LR08",
+    "criterion": "LR",
+    "name": "repetition",
+    "definition": "Avoids unnecessary word repetition"
+  },
+  {
+    "id": "LR09",
+    "criterion": "LR",
+    "name": "register",
+    "definition": "Uses an appropriate academic register"
+  },
+  {
+    "id": "LR10",
+    "criterion": "LR",
+    "name": "topic_vocabulary",
+    "definition": "Uses topic vocabulary accurately"
+  },
+  {
+    "id": "LR11",
+    "criterion": "LR",
+    "name": "argument_vocabulary",
+    "definition": "Uses reasoning vocabulary appropriately"
+  },
+  {
+    "id": "LR12",
+    "criterion": "LR",
+    "name": "qualification",
+    "definition": "Uses hedging or emphasis appropriately"
+  },
+  {
+    "id": "LR13",
+    "criterion": "LR",
+    "name": "intensity",
+    "definition": "Expresses degree accurately"
+  },
+  {
+    "id": "LR14",
+    "criterion": "LR",
+    "name": "paraphrase_accuracy",
+    "definition": "Preserves the question meaning in paraphrases"
+  },
+  {
+    "id": "LR15",
+    "criterion": "LR",
+    "name": "uncommon_words",
+    "definition": "Uses less common words only when suitable"
+  },
+  {
+    "id": "LR16",
+    "criterion": "LR",
+    "name": "idiomatic_usage",
+    "definition": "Avoids unnatural idiomatic combinations; idioms are not mandatory"
+  },
+  {
+    "id": "LR17",
+    "criterion": "LR",
+    "name": "lexical_clarity",
+    "definition": "Word choices preserve clarity"
+  },
+  {
+    "id": "LR18",
+    "criterion": "LR",
+    "name": "lexical_error_impact",
+    "definition": "Vocabulary errors are considered by impact, not counts"
+  },
+  {
+    "id": "GRA01",
+    "criterion": "GRA",
+    "name": "sentence_range",
+    "definition": "Uses varied sentence structures"
+  },
+  {
+    "id": "GRA02",
+    "criterion": "GRA",
+    "name": "complex_control",
+    "definition": "Controls complex constructions"
+  },
+  {
+    "id": "GRA03",
+    "criterion": "GRA",
+    "name": "clause_range",
+    "definition": "Uses clauses suited to meaning"
+  },
+  {
+    "id": "GRA04",
+    "criterion": "GRA",
+    "name": "tense",
+    "definition": "Uses tenses consistently and appropriately"
+  },
+  {
+    "id": "GRA05",
+    "criterion": "GRA",
+    "name": "agreement",
+    "definition": "Controls subject and verb agreement"
+  },
+  {
+    "id": "GRA06",
+    "criterion": "GRA",
+    "name": "articles",
+    "definition": "Uses articles appropriately"
+  },
+  {
+    "id": "GRA07",
+    "criterion": "GRA",
+    "name": "number",
+    "definition": "Controls singular, plural and countability"
+  },
+  {
+    "id": "GRA08",
+    "criterion": "GRA",
+    "name": "prepositions",
+    "definition": "Uses prepositions appropriately"
+  },
+  {
+    "id": "GRA09",
+    "criterion": "GRA",
+    "name": "pronouns",
+    "definition": "Controls pronoun form and agreement"
+  },
+  {
+    "id": "GRA10",
+    "criterion": "GRA",
+    "name": "comparison",
+    "definition": "Forms comparisons accurately"
+  },
+  {
+    "id": "GRA11",
+    "criterion": "GRA",
+    "name": "passive",
+    "definition": "Uses passive voice accurately when applicable"
+  },
+  {
+    "id": "GRA12",
+    "criterion": "GRA",
+    "name": "relative_clauses",
+    "definition": "Controls relative clauses when used"
+  },
+  {
+    "id": "GRA13",
+    "criterion": "GRA",
+    "name": "noun_phrases",
+    "definition": "Controls complex noun phrases when used"
+  },
+  {
+    "id": "GRA14",
+    "criterion": "GRA",
+    "name": "verb_forms",
+    "definition": "Controls verb morphology and complements"
+  },
+  {
+    "id": "GRA15",
+    "criterion": "GRA",
+    "name": "sentence_boundaries",
+    "definition": "Avoids fragments and run-on sentences"
+  },
+  {
+    "id": "GRA16",
+    "criterion": "GRA",
+    "name": "punctuation",
+    "definition": "Uses punctuation to support meaning"
+  },
+  {
+    "id": "GRA17",
+    "criterion": "GRA",
+    "name": "error_control",
+    "definition": "Maintains grammatical control across the response"
+  },
+  {
+    "id": "GRA18",
+    "criterion": "GRA",
+    "name": "communication_impact",
+    "definition": "Considers the effect of errors on understanding"
+  }
+]

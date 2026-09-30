@@ -1,0 +1,146 @@
+[
+  {
+    "id": "TA01",
+    "criterion": "TA",
+    "name": "task_coverage",
+    "definition": "Addresses the visual task"
+  },
+  {
+    "id": "TA02",
+    "criterion": "TA",
+    "name": "overview",
+    "definition": "Summarises the overall picture"
+  },
+  {
+    "id": "TA03",
+    "criterion": "TA",
+    "name": "key_features",
+    "definition": "Selects important features"
+  },
+  {
+    "id": "TA04",
+    "criterion": "TA",
+    "name": "data_accuracy",
+    "definition": "Describes values or stages accurately"
+  },
+  {
+    "id": "TA05",
+    "criterion": "TA",
+    "name": "comparisons",
+    "definition": "Makes meaningful comparisons when applicable"
+  },
+  {
+    "id": "TA06",
+    "criterion": "TA",
+    "name": "relevance",
+    "definition": "Avoids unsupported speculation"
+  },
+  {
+    "id": "CC01",
+    "criterion": "CC",
+    "name": "paragraph_purpose",
+    "definition": "Each paragraph has a discernible purpose"
+  },
+  {
+    "id": "CC02",
+    "criterion": "CC",
+    "name": "logical_sequence",
+    "definition": "Orders ideas intelligibly"
+  },
+  {
+    "id": "CC03",
+    "criterion": "CC",
+    "name": "paragraph_unity",
+    "definition": "Keeps related ideas together"
+  },
+  {
+    "id": "CC04",
+    "criterion": "CC",
+    "name": "progression",
+    "definition": "Develops a coherent overall progression"
+  },
+  {
+    "id": "CC05",
+    "criterion": "CC",
+    "name": "sentence_links",
+    "definition": "Connects neighbouring sentences meaningfully"
+  },
+  {
+    "id": "CC06",
+    "criterion": "CC",
+    "name": "referencing",
+    "definition": "Makes pronoun references clear"
+  },
+  {
+    "id": "LR01",
+    "criterion": "LR",
+    "name": "range",
+    "definition": "Uses suitable descriptive vocabulary"
+  },
+  {
+    "id": "LR02",
+    "criterion": "LR",
+    "name": "precision",
+    "definition": "Describes trends or stages accurately"
+  },
+  {
+    "id": "LR03",
+    "criterion": "LR",
+    "name": "collocation",
+    "definition": "Controls word combinations"
+  },
+  {
+    "id": "LR04",
+    "criterion": "LR",
+    "name": "word_formation",
+    "definition": "Controls word forms"
+  },
+  {
+    "id": "LR05",
+    "criterion": "LR",
+    "name": "spelling",
+    "definition": "Controls spelling"
+  },
+  {
+    "id": "LR06",
+    "criterion": "LR",
+    "name": "register",
+    "definition": "Uses appropriate academic language"
+  },
+  {
+    "id": "GRA01",
+    "criterion": "GRA",
+    "name": "sentence_range",
+    "definition": "Uses suitable sentence variety"
+  },
+  {
+    "id": "GRA02",
+    "criterion": "GRA",
+    "name": "tense",
+    "definition": "Controls tense"
+  },
+  {
+    "id": "GRA03",
+    "criterion": "GRA",
+    "name": "agreement",
+    "definition": "Controls agreement"
+  },
+  {
+    "id": "GRA04",
+    "criterion": "GRA",
+    "name": "articles",
+    "definition": "Controls articles"
+  },
+  {
+    "id": "GRA05",
+    "criterion": "GRA",
+    "name": "sentence_boundaries",
+    "definition": "Controls sentence boundaries"
+  },
+  {
+    "id": "GRA06",
+    "criterion": "GRA",
+    "name": "punctuation",
+    "definition": "Controls punctuation"
+  }
+]

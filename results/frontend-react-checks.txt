@@ -1,0 +1,50 @@
+Frontend migration verification — 2026-09-15
+Working directory: D:/01_CongNgheThongTin/09_DoAnTotNghiep
+Node: v24.14.1
+npm: 11.11.0
+
+Final command: node --test frontend/tests.mjs
+tests 7
+pass 7
+fail 0
+exit code 0
+
+Final commands: node --check frontend/app.mjs
+                node --check frontend/store.mjs
+                node --check frontend/mock-ai.mjs
+No syntax errors; exit code 0.
+
+Working directory: frontend/react
+Final command: npm run build
+tsc --noEmit && vite build
+vite v8.3.0 building client environment for production...
+27 modules transformed.
+dist/index.html                           0.57 kB
+dist/assets/T1-BAR-01-D5a_pOaa.png       36.24 kB
+dist/assets/T1-LINE-02-Omq59Fg4.png      45.66 kB
+dist/assets/T1-PROCESS-03-BM9Mfixk.png   48.12 kB
+dist/assets/index-Btwa8-jN.css           15.25 kB
+dist/assets/index-_T1OCgWb.js           251.21 kB
+built in 154ms
+
+Final command: npm run type-check
+tsc --noEmit
+No diagnostics.
+
+Final command: npm test
+vitest run
+RUN v5.0.0
+Test Files 2 passed (2)
+Tests 11 passed (11)
+Start at 15:53:37
+Duration 2.34s
+Combined build / type-check / test command exit code: 0.
+
+Browser verification attempt: cua.getBrowser for http://127.0.0.1:5173
+Result: No browser is available.
+No visual desktop/mobile verification claimed. React interaction tests use jsdom.
+
+Infrastructure limitations encountered:
+- npm registry access initially failed with EACCES; authorized installation succeeded.
+- Vite temporary directory creation initially failed with EPERM in sandbox;
+  authorized build and tests succeeded outside sandbox.

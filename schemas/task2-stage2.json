@@ -1,0 +1,275 @@
+{
+  "type": "object",
+  "properties": {
+    "task": {
+      "type": "integer",
+      "enum": [
+        2
+      ]
+    },
+    "version_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "evaluation_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "diagnostic"
+      ]
+    },
+    "overview": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "TR01",
+              "TR02",
+              "TR03",
+              "TR04",
+              "TR05",
+              "TR06",
+              "TR07",
+              "TR08",
+              "TR09",
+              "TR10",
+              "TR11",
+              "TR12",
+              "TR13",
+              "TR14",
+              "TR15",
+              "TR16",
+              "TR17",
+              "TR18",
+              "CC01",
+              "CC02",
+              "CC03",
+              "CC04",
+              "CC05",
+              "CC06",
+              "CC07",
+              "CC08",
+              "CC09",
+              "CC10",
+              "CC11",
+              "CC12",
+              "CC13",
+              "CC14",
+              "CC15",
+              "CC16",
+              "CC17",
+              "CC18",
+              "LR01",
+              "LR02",
+              "LR03",
+              "LR04",
+              "LR05",
+              "LR06",
+              "LR07",
+              "LR08",
+              "LR09",
+              "LR10",
+              "LR11",
+              "LR12",
+              "LR13",
+              "LR14",
+              "LR15",
+              "LR16",
+              "LR17",
+              "LR18",
+              "GRA01",
+              "GRA02",
+              "GRA03",
+              "GRA04",
+              "GRA05",
+              "GRA06",
+              "GRA07",
+              "GRA08",
+              "GRA09",
+              "GRA10",
+              "GRA11",
+              "GRA12",
+              "GRA13",
+              "GRA14",
+              "GRA15",
+              "GRA16",
+              "GRA17",
+              "GRA18"
+            ]
+          },
+          "criterion": {
+            "type": "string",
+            "enum": [
+              "TR",
+              "CC",
+              "LR",
+              "GRA"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "strong",
+              "developing",
+              "weak",
+              "not_observable",
+              "not_applicable"
+            ]
+          },
+          "quote": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "none",
+              "minor",
+              "moderate",
+              "major"
+            ]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "criterion",
+          "status",
+          "quote",
+          "explanation",
+          "severity",
+          "confidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 72,
+      "maxItems": 72
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion": {
+            "type": "string",
+            "enum": [
+              "TR",
+              "CC",
+              "LR",
+              "GRA"
+            ]
+          },
+          "original": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "corrected": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          }
+        },
+        "required": [
+          "criterion",
+          "original",
+          "corrected",
+          "explanation"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 8
+    },
+    "priorities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion": {
+            "type": "string",
+            "enum": [
+              "TR",
+              "CC",
+              "LR",
+              "GRA"
+            ]
+          },
+          "problem": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "quote": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 2000
+          }
+        },
+        "required": [
+          "criterion",
+          "problem",
+          "action",
+          "quote"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 5
+    }
+  },
+  "required": [
+    "task",
+    "version_id",
+    "evaluation_id",
+    "stage",
+    "overview",
+    "indicators",
+    "corrections",
+    "priorities"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,20 @@
+export const STORAGE_KEY = 'ielts-writing-coach-demo-v1';
+export const SAMPLE_TOPICS = [
+  {id:'t1-bar',task:1,type:'Biểu đồ cột',title:'Di chuyển đến nơi làm việc',prompt:'The chart shows the percentage of commuters using three transport modes in Northbridge in 2016 and 2026. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',image:'../data/images/T1-BAR-01.png',active:true},
+  {id:'t1-line',task:1,type:'Biểu đồ đường',title:'Lượt ghé thăm thư viện',prompt:'The graph shows monthly library visits in Oakford and Pinehill from January to April 2026. Summarise the main features and make relevant comparisons.',image:'../data/images/T1-LINE-02.png',active:true},
+  {id:'t1-process',task:1,type:'Quy trình',title:'Tái chế giấy',prompt:'The diagram shows how waste paper is recycled into new paper. Summarise the process by selecting and reporting the main stages.',image:'../data/images/T1-PROCESS-03.png',active:true},
+  {id:'t2-opinion',task:2,type:'Opinion essay',title:'Đầu tư giao thông công cộng',prompt:'Some people believe cities should spend more money on public transport than on new roads. To what extent do you agree or disagree?',image:'',active:true},
+  {id:'t2-discussion',task:2,type:'Discussion essay',title:'Học nhóm hay học cá nhân',prompt:'Some people think students learn better in groups, while others prefer individual study. Discuss both views and give your own opinion.',image:'',active:true},
+  {id:'t2-twopart',task:2,type:'Two-part essay',title:'Vận động của người trưởng thành',prompt:'Many adults spend little time exercising. Why does this happen, and what can employers do to help?',image:'',active:true}
+];
+export const SAMPLE_USERS = [{id:'student',name:'Người học demo',role:'student',active:true},{id:'teacher',name:'Giáo viên demo',role:'teacher',active:true},{id:'admin',name:'Quản trị demo',role:'admin',active:true}];
+export function initialState(){return {topics:structuredClone(SAMPLE_TOPICS),users:structuredClone(SAMPLE_USERS),essays:[],selectedTopic:'t2-opinion',selectedEssay:null,draft:'',drafts:{},role:'student',uiPage:'practice'};}
+export function loadState(storage=globalThis.localStorage){try{const raw=storage.getItem(STORAGE_KEY);if(!raw)return initialState();const saved=JSON.parse(raw);if(!Array.isArray(saved.topics)||!Array.isArray(saved.essays)||!Array.isArray(saved.users))throw Error('invalid');return {...initialState(),...saved};}catch{return initialState();}}
+export function saveState(state,storage=globalThis.localStorage){storage.setItem(STORAGE_KEY,JSON.stringify(state));}
+export function countWords(value){return (value.trim().match(/\S+/g)||[]).length;}
+export function createEssay(state,topicId,body){const topic=state.topics.find(t=>t.id===topicId);if(!topic)throw Error('Đề không tồn tại');const essay={id:crypto.randomUUID(),topicId,task:topic.task,promptSnapshot:topic.prompt,imageSnapshot:topic.image||'',createdAt:new Date().toISOString(),versions:[{number:1,body,createdAt:new Date().toISOString(),feedback:null,thread:[],teacherReview:null}]};state.essays.unshift(essay);state.selectedEssay=essay.id;return essay;}
+export function appendVersion(essay,body){const version={number:essay.versions.length+1,body,createdAt:new Date().toISOString(),feedback:null,thread:[],teacherReview:null};essay.versions.push(version);return version;}
+export function canSubmit(topic,body){if(!topic)return 'Hãy chọn một đề luyện viết.';if(topic.task===1&&!topic.image)return 'Task 1 cần ảnh đề để xem dữ liệu và chấm đầy đủ.';if(!body.trim())return 'Hãy viết bài trước khi nộp.';if(countWords(body)<20)return 'Bản demo yêu cầu ít nhất 20 từ để thử luồng nộp bài.';return '';}
+export function latestVersion(essay){return essay?.versions.at(-1);}
+export function essayTitle(state,essay){return state.topics.find(t=>t.id===essay.topicId)?.title||'Đề đã thay đổi';}
+export function formatDate(iso){return new Intl.DateTimeFormat('vi-VN',{day:'2-digit',month:'2-digit',year:'numeric'}).format(new Date(iso));}

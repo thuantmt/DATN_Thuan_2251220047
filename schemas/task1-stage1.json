@@ -1,0 +1,212 @@
+{
+  "type": "object",
+  "properties": {
+    "task": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "version_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "examiner"
+      ]
+    },
+    "assessment_status": {
+      "type": "string",
+      "enum": [
+        "assessed",
+        "needs_input",
+        "insufficient_evidence"
+      ]
+    },
+    "visual_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "uncertain",
+        "missing",
+        "not_applicable"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2000
+      },
+      "minItems": 0,
+      "maxItems": 8
+    },
+    "criteria": {
+      "type": "object",
+      "properties": {
+        "TA": {
+          "type": "object",
+          "properties": {
+            "band": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 9,
+              "multipleOf": 0.5
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "quotes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "minItems": 0,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "band",
+            "summary",
+            "quotes"
+          ],
+          "additionalProperties": false
+        },
+        "CC": {
+          "type": "object",
+          "properties": {
+            "band": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 9,
+              "multipleOf": 0.5
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "quotes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "minItems": 0,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "band",
+            "summary",
+            "quotes"
+          ],
+          "additionalProperties": false
+        },
+        "LR": {
+          "type": "object",
+          "properties": {
+            "band": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 9,
+              "multipleOf": 0.5
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "quotes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "minItems": 0,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "band",
+            "summary",
+            "quotes"
+          ],
+          "additionalProperties": false
+        },
+        "GRA": {
+          "type": "object",
+          "properties": {
+            "band": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 9,
+              "multipleOf": 0.5
+            },
+            "summary": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "quotes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "minItems": 0,
+              "maxItems": 4
+            }
+          },
+          "required": [
+            "band",
+            "summary",
+            "quotes"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "TA",
+        "CC",
+        "LR",
+        "GRA"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "task",
+    "version_id",
+    "stage",
+    "assessment_status",
+    "visual_status",
+    "limitations",
+    "criteria"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

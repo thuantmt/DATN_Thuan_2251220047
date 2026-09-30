@@ -1,0 +1,17 @@
+{
+  "records": [],
+  "required_fields": [
+    "sample_id",
+    "task",
+    "question_id",
+    "author_group",
+    "source",
+    "permission",
+    "split",
+    "teacher_id",
+    "criterion_scores",
+    "scored_before_ai",
+    "scored_at"
+  ],
+  "note": "No labelled research data has been collected. Synthetic smoke fixtures are not teacher-scored research data."
+}

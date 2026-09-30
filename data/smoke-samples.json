@@ -1,0 +1,122 @@
+[
+  {
+    "id": "T1-BAR-01",
+    "task": 1,
+    "question": "The chart shows the percentage of commuters using three transport modes in Northbridge in 2016 and 2026. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "image": "data/images/T1-BAR-01.png",
+    "essay": "The bar chart compares the proportions of commuters travelling by car, bus and bicycle in Northbridge in 2016 and 2026.\n\nOverall, cars were the most popular option in both years, although their share declined. Cycling became considerably more common, whereas bus use increased only slightly. Together, the two alternatives to driving accounted for half of commuters by the end of the period.\n\nIn 2016, 65% of people travelled by car. This figure was more than twice the percentage for buses, at 25%, and over six times the share for bicycles, which stood at 10%. Ten years later, the proportion using cars had fallen to 50%, a decrease of 15 percentage points.\n\nBy contrast, bus use rose from 25% to 30%. The bicycle figure doubled to 20%, representing the largest proportional increase among the three categories. Despite this growth, cycling remained the least common mode in 2026, with a share ten percentage points below that of buses.",
+    "reference": {
+      "years": [
+        2016,
+        2026
+      ],
+      "car": [
+        65,
+        50
+      ],
+      "bus": [
+        25,
+        30
+      ],
+      "bicycle": [
+        10,
+        20
+      ]
+    },
+    "version_id": "T1-BAR-01-v1",
+    "origin": "assistant_authored_synthetic_for_technical_testing",
+    "split": "development_only",
+    "teacher_scores": null,
+    "word_count": 156
+  },
+  {
+    "id": "T1-LINE-02",
+    "task": 1,
+    "question": "The graph shows monthly library visits in Oakford and Pinehill from January to April 2026. Summarise the main features and make relevant comparisons.",
+    "image": "data/images/T1-LINE-02.png",
+    "essay": "The line graph show the number of visits to two town libraries between January and April 2026. The figures are measured in thousands of visits.\n\nOverall, attendance at Oakford increased over the period, while Pinehill finished at the same level as it began. Pinehill was initially busier, but Oakford overtook it in March and remained ahead in the final month.\n\nOakford recorded 12 thousand visits in January. This figure rose to 15 thousand in February, followed by another increase to 21 thousand in March. It then reached 24 thousand in April, which was twice the initial value. The increase between February and March was larger than in the other intervals.\n\nIn contrast, Pinehill began with 18 thousand visits and then decreased to 16 thousand in February. Attendance recovered to 17 thousand in March and 18 thousand in April. The two libraries were closest in February, when there was a difference of only one thousand visits. By April, the gap had widened to six thousand.",
+    "reference": {
+      "months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr"
+      ],
+      "Oakford": [
+        12,
+        15,
+        21,
+        24
+      ],
+      "Pinehill": [
+        18,
+        16,
+        17,
+        18
+      ]
+    },
+    "version_id": "T1-LINE-02-v1",
+    "origin": "assistant_authored_synthetic_for_technical_testing",
+    "split": "development_only",
+    "teacher_scores": null,
+    "word_count": 164
+  },
+  {
+    "id": "T1-PROCESS-03",
+    "task": 1,
+    "question": "The diagram shows how waste paper is recycled into new paper. Summarise the process by selecting and reporting the main stages.",
+    "image": "data/images/T1-PROCESS-03.png",
+    "essay": "The diagram illustrates how used paper is recycled to produce new paper. It consists of six main stages, beginning with collection and ending with the production of rolls.\n\nOverall, the process is linear. Waste paper first has to be gathered and sorted before it can be converted into pulp. The later stages remove unwanted material and turn the cleaned mixture into a finished product.\n\nInitially, waste paper is collected and delivered for sorting. At this stage, unsuitable materials are removed. The selected paper is then mixed with water to make pulp. This changes the paper from separate sheets into a mixture that can be processed further.\n\nNext, the pulp is filtered and cleaned to remove ink and other unwanted material. After cleaning, the mixture is pressed and dried. These operations remove water and form sheets of paper. Finally, the paper is wound into rolls for further use. The diagram does not provide the duration of individual stages or state how much paper is produced during one cycle.",
+    "reference": {
+      "stages": [
+        "Collect",
+        "Sort",
+        "Mix with water",
+        "Filter and clean",
+        "Press and dry",
+        "Make rolls"
+      ]
+    },
+    "version_id": "T1-PROCESS-03-v1",
+    "origin": "assistant_authored_synthetic_for_technical_testing",
+    "split": "development_only",
+    "teacher_scores": null,
+    "word_count": 167
+  },
+  {
+    "id": "T2-OPINION-01",
+    "task": 2,
+    "question": "Some people believe cities should spend more money on public transport than on new roads. To what extent do you agree or disagree?",
+    "image": null,
+    "essay": "Cities face a difficult choice when deciding whether to expand roads or improve public transport. I largely agree that buses and trains should receive more investment, although some road maintenance remains necessary.\n\nOne reason is that effective public transport can give residents a practical alternative to driving. A bus service that runs frequently and connects residential areas with workplaces can carry many passengers without requiring each person to use a car. For example, a worker might stop driving if a direct bus takes a similar amount of time and operates reliably in the evening. Spending on such services can therefore improve access to employment as well as reduce dependence on private vehicles. However, buying buses alone is insufficient if routes do not match people's needs.\n\nAnother consideration is fairness. Not every resident can afford a car, and some people cannot drive because of age or disability. Investment in accessible stations and affordable tickets can help these groups participate more easily in education and daily activities. By contrast, a new road may offer them limited direct benefit if no public service uses it. This does not mean that every transport project will be successful; the city should examine passenger demand and listen to users before choosing a project.\n\nNevertheless, roads cannot be ignored. Emergency vehicles, delivery services and buses themselves require safe road surfaces. Repairing dangerous junctions or damaged roads may be more urgent than building an expensive railway with few likely passengers.\n\nIn conclusion, public transport should generally receive the larger share of additional investment because it can serve many residents and improve access. Essential road repairs should continue, while major new roads should be justified against other ways of meeting the same transport need.",
+    "version_id": "T2-OPINION-01-v1",
+    "origin": "assistant_authored_synthetic_for_technical_testing",
+    "split": "development_only",
+    "teacher_scores": null,
+    "word_count": 285
+  },
+  {
+    "id": "T2-DISCUSSION-02",
+    "task": 2,
+    "question": "Some people think students learn better in groups, while others prefer individual study. Discuss both views and give your own opinion.",
+    "image": null,
+    "essay": "People have different opinion about whether students should study together or alone. Both methods have benefits, and I believe that combining them is usually more useful than choosing only one.\n\nStudying in groups can help students understand difficult ideas. When one student explains a concept, the others can ask questions and identify parts that are unclear. The student giving the explanation also has to organise the idea carefully. For instance, a small group preparing a presentation can compare different interpretations of an article and discover evidence that one member missed. Group work may also encourage students who find it difficult to remain motivated on their own. However, these advantages depend on everyone participating; a group with one active member is unlikely to support all learners equally.\n\nIndividual study has a different strength. It allows learners to work at their own pace and focus on personal weaknesses. A student who struggles with grammar can spend extra time on that topic instead of following a group's timetable. Working alone can also reduce interruptions when the task requires sustained concentration, such as planning an essay or solving a difficult problem. On the other hand, someone studying alone may repeat a misunderstanding without receiving any correction.\n\nIn my view, the best approach depends on the task and the stage of learning. Students could first read and attempt exercises independently, then meet to compare answers and discuss problems. This gives each person responsibility for preparation while preserving the benefit of feedback. Teachers can support the process by setting clear goals for discussion rather than simply telling students to form groups.\n\nIn conclusion, group learning offers explanation and exchange, whereas individual study provides control over pace and attention. A planned combination can make use of both advantages.",
+    "version_id": "T2-DISCUSSION-02-v1",
+    "origin": "assistant_authored_synthetic_for_technical_testing",
+    "split": "development_only",
+    "teacher_scores": null,
+    "word_count": 291
+  },
+  {
+    "id": "T2-TWO-PART-03",
+    "task": 2,
+    "question": "Many adults spend little time exercising. Why does this happen, and what can employers do to help?",
+    "image": null,
+    "essay": "Many adults find that exercise occupies a small part of their week. In my opinion, demanding schedules and a lack of convenient opportunities are important causes. Employers can help by making activity easier to include in the working day.\n\nThe first obstacle is time. Employees may spend many hours working and travelling, after which they still have domestic responsibilities. A parent who returns home late may have to prepare dinner and care for children before considering a visit to a gym. The problem is therefore not always a lack of interest. Even motivated people can struggle when exercise requires a separate journey and a long period away from home.\n\nA second cause is the nature of some jobs. People who sit at a desk for most of the day may become accustomed to remaining inactive. When breaks are short, they may choose to rest near their desks. In addition, facilities can be expensive or far from the workplace. These practical barriers can make a general instruction to exercise more seem unrealistic.\n\nEmployers could respond by allowing flexible starting times or short activity breaks where the job permits. They could also provide secure bicycle parking and suitable changing facilities, making active travel more convenient. For example, an office might organise an optional lunchtime walking group that requires no special equipment. Participation should remain voluntary because employees have different health needs and preferences.\n\nSuch measures will not solve every difficulty. Workers also need manageable workloads, and some jobs cannot offer the same flexibility as office work. Nevertheless, employers can remove several barriers within their control.\n\nIn conclusion, limited time and inconvenient opportunities help explain low activity levels. Flexible arrangements and practical facilities can support exercise without making it an additional obligation.",
+    "version_id": "T2-TWO-PART-03-v1",
+    "origin": "assistant_authored_synthetic_for_technical_testing",
+    "split": "development_only",
+    "teacher_scores": null,
+    "word_count": 289
+  }
+]

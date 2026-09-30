@@ -1,0 +1,74 @@
+[
+  {
+    "id": "FR01",
+    "name": "Tài khoản và phân quyền",
+    "acceptance": "Đăng nhập; phân biệt người học, giáo viên, quản trị; từ chối API sai quyền.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR02",
+    "name": "Đề luyện viết",
+    "acceptance": "Có Task 1 kèm ảnh và Task 2; đề đã dùng được lưu theo phiên bản.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR03",
+    "name": "Bài và phiên bản",
+    "acceptance": "Lưu nháp; mở lại không mất nội dung; nộp tạo bản cố định.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR04",
+    "name": "Ước lượng điểm",
+    "acceptance": "Chọn đúng TA hoặc TR; có CC, LR, GRA và dẫn chứng; hiển thị điểm tham khảo.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR05",
+    "name": "Phân tích lỗi",
+    "acceptance": "Stage 2 giữ tham chiếu Stage 1; không tạo lại điểm; có ưu tiên cải thiện.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR06",
+    "name": "Hội thoại",
+    "acceptance": "Câu hỏi và phản hồi gắn đúng bài, phiên bản, đánh giá; giới hạn lịch sử gửi AI.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR07",
+    "name": "Sửa và chấm lại",
+    "acceptance": "Tạo phiên bản mới; kết quả cũ còn nguyên; người học xem được cả hai.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR08",
+    "name": "Giáo viên",
+    "acceptance": "Chỉ xem bài được cấp quyền; điểm và nhận xét lưu riêng với AI.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR09",
+    "name": "Tiến độ và lỗi",
+    "acceptance": "Tách hai task; công bố cách chọn phiên bản để tránh đếm lỗi lặp giả.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR10",
+    "name": "Quản trị",
+    "acceptance": "Quản lý tài khoản, vai trò, đề và thống kê cơ bản.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR11",
+    "name": "Giới hạn AI",
+    "acceptance": "Có trần lượt, độ dài, retry; ghi sử dụng; ngăn gửi trùng yêu cầu.",
+    "status": "specified_not_implemented"
+  },
+  {
+    "id": "FR12",
+    "name": "Xử lý lỗi",
+    "acceptance": "Thiếu ảnh, timeout, JSON sai được thông báo; không mất bài hoặc giả kết quả.",
+    "status": "specified_not_implemented"
+  }
+]

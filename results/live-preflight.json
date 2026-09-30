@@ -1,0 +1,14 @@
+{
+  "mode": "preflight",
+  "recorded_at": "2026-09-14T04:59:40.656998+00:00",
+  "prompt_version": "0.2.0",
+  "synthetic_inputs": true,
+  "real_ai_calls": 0,
+  "results": [],
+  "status": "blocked",
+  "reasons": [
+    "GEMINI_API_KEY is not configured",
+    "GEMINI_MODEL is not configured; choose an available image-capable model",
+    "Reviewed rubric file is not supplied"
+  ]
+}

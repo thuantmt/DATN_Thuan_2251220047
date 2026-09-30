@@ -1,0 +1,227 @@
+{
+  "type": "object",
+  "properties": {
+    "task": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "version_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "evaluation_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "diagnostic"
+      ]
+    },
+    "overview": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "TA01",
+              "TA02",
+              "TA03",
+              "TA04",
+              "TA05",
+              "TA06",
+              "CC01",
+              "CC02",
+              "CC03",
+              "CC04",
+              "CC05",
+              "CC06",
+              "LR01",
+              "LR02",
+              "LR03",
+              "LR04",
+              "LR05",
+              "LR06",
+              "GRA01",
+              "GRA02",
+              "GRA03",
+              "GRA04",
+              "GRA05",
+              "GRA06"
+            ]
+          },
+          "criterion": {
+            "type": "string",
+            "enum": [
+              "TA",
+              "CC",
+              "LR",
+              "GRA"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "strong",
+              "developing",
+              "weak",
+              "not_observable",
+              "not_applicable"
+            ]
+          },
+          "quote": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "none",
+              "minor",
+              "moderate",
+              "major"
+            ]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "criterion",
+          "status",
+          "quote",
+          "explanation",
+          "severity",
+          "confidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 24,
+      "maxItems": 24
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion": {
+            "type": "string",
+            "enum": [
+              "TA",
+              "CC",
+              "LR",
+              "GRA"
+            ]
+          },
+          "original": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "corrected": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          }
+        },
+        "required": [
+          "criterion",
+          "original",
+          "corrected",
+          "explanation"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 8
+    },
+    "priorities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criterion": {
+            "type": "string",
+            "enum": [
+              "TA",
+              "CC",
+              "LR",
+              "GRA"
+            ]
+          },
+          "problem": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "quote": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 2000
+          }
+        },
+        "required": [
+          "criterion",
+          "problem",
+          "action",
+          "quote"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 5
+    }
+  },
+  "required": [
+    "task",
+    "version_id",
+    "evaluation_id",
+    "stage",
+    "overview",
+    "indicators",
+    "corrections",
+    "priorities"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

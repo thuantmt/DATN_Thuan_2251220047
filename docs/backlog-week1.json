@@ -1,0 +1,62 @@
+[
+  {
+    "id": "W1-01",
+    "task": "Phạm vi và tiêu chí nghiệm thu",
+    "status": "Đã soạn",
+    "dependency": "GVHD xác nhận phạm vi"
+  },
+  {
+    "id": "W1-02",
+    "task": "Kiểm kê và rà soát 10 file prompt",
+    "status": "Đã thực hiện",
+    "dependency": "Giáo viên xem nội dung chuyên môn"
+  },
+  {
+    "id": "W1-03",
+    "task": "Prompt và schema v0.2",
+    "status": "Đã tạo và kiểm tra cục bộ",
+    "dependency": "Thử bằng API thật"
+  },
+  {
+    "id": "W1-04",
+    "task": "Sáu đề và bài thử kỹ thuật",
+    "status": "Đã tạo",
+    "dependency": "Không dùng làm điểm tham chiếu"
+  },
+  {
+    "id": "W1-05",
+    "task": "Kế hoạch và phiếu chấm mẫu",
+    "status": "Đã chuẩn bị",
+    "dependency": "Xác nhận người chấm"
+  },
+  {
+    "id": "W1-06",
+    "task": "Bộ kiểm tra kỹ thuật",
+    "status": "26 kiểm tra đạt",
+    "dependency": "Chưa chứng minh độ đúng của AI"
+  },
+  {
+    "id": "W1-07",
+    "task": "Chọn công nghệ web",
+    "status": "Đã đề xuất React Node MongoDB",
+    "dependency": "Chọn model sau thử API"
+  },
+  {
+    "id": "W1-08",
+    "task": "Thử mô hình trực tiếp",
+    "status": "Chưa chạy",
+    "dependency": "API key, model, rubric được kiểm tra"
+  },
+  {
+    "id": "W1-09",
+    "task": "Mã nguồn và quản lý phiên bản",
+    "status": "Đã chuẩn bị gói nguồn",
+    "dependency": "Chưa có remote bên ngoài"
+  },
+  {
+    "id": "W1-10",
+    "task": "Báo cáo Word từng quy trình",
+    "status": "Đã soạn",
+    "dependency": "Người dùng và GVHD xem xét"
+  }
+]
