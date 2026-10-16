@@ -1,0 +1,12 @@
+
+> ielts-writing-backend@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 D:/01_CongNgheThongTin/09_DoAnTotNghiep/backend
+
+
+ Test Files  4 passed (4)
+      Tests  25 passed (25)
+   Start at  21:16:09
+   Duration  12.52s (tests 72%, import 24%, transform 4%)

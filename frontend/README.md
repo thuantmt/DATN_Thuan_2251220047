@@ -1,3 +1,7 @@
+## Cập nhật Tuần 3 ngày 14/10/2026
+
+React tại `react/` có luồng tài khoản thật qua backend. Demo HTML này và React `/demo` tiếp tục dùng dữ liệu mô phỏng độc lập. Xem [hướng dẫn](../docs/week3-deployment.md).
+
 # IELTS Writing Coach frontend demo
 
 ## Ứng dụng React mới

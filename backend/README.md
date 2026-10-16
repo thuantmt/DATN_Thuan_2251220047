@@ -1,3 +1,7 @@
+## Cập nhật Tuần 3 ngày 14/10/2026
+
+Đã bổ sung xác thực bằng MongoDB session và cookie HttpOnly, User, seed ba vai trò và RBAC. Dùng `npm run seed` sau khi cấu hình biến SEED_*; không cần JWT secret cho thiết kế này. HOST cấu hình được cho Render. Xem [xác thực](docs/authentication.md) và [hướng dẫn chạy/deploy](../docs/week3-deployment.md). Phần Giai đoạn 1 bên dưới được giữ làm lịch sử.
+
 # Backend IELTS Writing Coach
 
 Backend Giai đoạn 1 dùng Node.js, TypeScript, Express, Mongoose và MongoDB Atlas. Phiên bản này mới cung cấp nền tảng vận hành, kiểm tra cấu hình và hai endpoint hệ thống. Chưa có đăng nhập JWT, collection nghiệp vụ, API bài viết hoặc kết nối Gemini.

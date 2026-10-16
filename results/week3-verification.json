@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-14",
+  "backend": {
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "tests": 25,
+    "build": "PASS",
+    "audit_vulnerabilities": 0,
+    "database": "isolated MongoMemoryServer, no Atlas credentials"
+  },
+  "frontend": {
+    "typecheck": "PASS",
+    "tests": 17,
+    "build": "PASS",
+    "test_transport": "fetch mocked"
+  },
+  "demo_tests": 7,
+  "python_contract_tests": 26,
+  "atlas": {
+    "status": "BLOCKED",
+    "system_dns": "ECONNREFUSED",
+    "public_dns_srv": "resolved 3 records using 1.1.1.1 and 8.8.8.8",
+    "connection_with_process_local_dns": "MongooseServerSelectionError / ReplicaSetNoPrimary",
+    "server_error": "MongoNetworkError / ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR",
+    "ping_verified": false,
+    "os_dns_modified": false
+  },
+  "visual_qa": {
+    "status": "BLOCKED",
+    "reason": "No connected browser surfaces; cua inventory apps=[] browsers=[]"
+  },
+  "deployment": "NOT_EXECUTED",
+  "limitations": [
+    "Atlas persistence and login not accepted",
+    "Frontend real browser end-to-end not verified",
+    "Production restart persistence not verified",
+    "No AI integration"
+  ],
+  "document_qa": {
+    "status": "PASS",
+    "pages": 2,
+    "renderer": "backend/tools/render_docx_word.py",
+    "all_pages_visually_reviewed": true,
+    "canonical_renderer": "unavailable soffice.exe"
+  },
+  "git_diff_check": "PASS"
+}

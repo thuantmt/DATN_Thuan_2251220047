@@ -1,0 +1,62 @@
+npm run lint
+exitCode=0
+
+> ielts-writing-backend@0.1.0 lint
+> eslint .
+
+
+
+
+npm run type-check
+exitCode=0
+
+> ielts-writing-backend@0.1.0 type-check
+> tsc --noEmit
+
+
+
+
+npm test
+exitCode=0
+
+> ielts-writing-backend@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 D:/01_CongNgheThongTin/09_DoAnTotNghiep/backend
+
+
+ Test Files  4 passed (4)
+      Tests  25 passed (25)
+   Start at  21:40:32
+   Duration  9.96s (tests 74%, import 23%, transform 3%)
+
+
+
+
+npm run build
+exitCode=0
+
+> ielts-writing-backend@0.1.0 build
+> tsc -p tsconfig.build.json
+
+
+
+
+node --test frontend/tests.mjs
+exitCode=0
+✔ mỗi đề mẫu khớp câu hỏi trong fixture và Task 1 có ảnh tồn tại (2.0395ms)
+✔ đếm số từ và chặn bài rỗng hoặc quá ngắn (0.2926ms)
+✔ Task 1 thiếu hình không thể nộp (0.1131ms)
+✔ nộp và sửa bài tạo phiên bản độc lập và lưu snapshot đề (3.0401ms)
+✔ phản hồi mô phỏng không có band score và tiêu chí Task 1/2 đúng (0.226ms)
+✔ lưu và khôi phục nháp theo đề cùng lịch sử trong storage (0.3982ms)
+✔ dữ liệu storage lỗi trả về trạng thái mới (0.6116ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.3377

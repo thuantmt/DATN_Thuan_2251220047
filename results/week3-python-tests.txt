@@ -1,0 +1,37 @@
+python : test_absent_quote (test_contracts.Contracts.test_absent_quote) ... ok
+At line:2 char:90
++ ... -demo-tests.txt; python -m unittest discover -s tests -v 2>&1 | Tee-O ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_absent_quo...t_quote) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+test_all_six_inputs_and_stages (test_contracts.Contracts.test_all_six_inputs_and_stages) ... ok
+test_band_increment (test_contracts.Contracts.test_band_increment) ... ok
+test_band_range (test_contracts.Contracts.test_band_range) ... ok
+test_boolean_band (test_contracts.Contracts.test_boolean_band) ... ok
+test_cache_invalidates_with_prompt (test_contracts.Contracts.test_cache_invalidates_with_prompt) ... ok
+test_cache_invalidates_with_question (test_contracts.Contracts.test_cache_invalidates_with_question) ... ok
+test_chat_history_limit (test_contracts.Contracts.test_chat_history_limit) ... ok
+test_criterion_mismatch (test_contracts.Contracts.test_criterion_mismatch) ... ok
+test_duplicate_indicator (test_contracts.Contracts.test_duplicate_indicator) ... ok
+test_empty_question (test_contracts.Contracts.test_empty_question) ... ok
+test_indicator_wrong_group (test_contracts.Contracts.test_indicator_wrong_group) ... ok
+test_invalid_task (test_contracts.Contracts.test_invalid_task) ... ok
+test_metric_known_example_and_missing (test_contracts.Contracts.test_metric_known_example_and_missing) ... ok
+test_missing_task1_image (test_contracts.Contracts.test_missing_task1_image) ... ok
+test_mixed_chat_versions (test_contracts.Contracts.test_mixed_chat_versions) ... ok
+test_needs_input_with_null_scores (test_contracts.Contracts.test_needs_input_with_null_scores) ... ok
+test_no_labelled_data_has_no_accuracy (test_contracts.Contracts.test_no_labelled_data_has_no_accuracy) ... ok
+test_path_traversal (test_contracts.Contracts.test_path_traversal) ... ok
+test_practice_rounding (test_contracts.Contracts.test_practice_rounding) ... ok
+test_short_input (test_contracts.Contracts.test_short_input) ... ok
+test_stage2_cannot_add_score (test_contracts.Contracts.test_stage2_cannot_add_score) ... ok
+test_uncertain_visual (test_contracts.Contracts.test_uncertain_visual) ... ok
+test_weak_without_evidence (test_contracts.Contracts.test_weak_without_evidence) ... ok
+test_wrong_evaluation (test_contracts.Contracts.test_wrong_evaluation) ... ok
+test_wrong_version (test_contracts.Contracts.test_wrong_version) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.157s
+
+OK

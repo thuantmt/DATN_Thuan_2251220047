@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-14",
+  "npm_ci_exit_code": 0,
+  "cause": "Cache owned by CodexSandboxOffline; Admin lacked delete access; medium-integrity token",
+  "repair": "Inherited Modify ACL for Admin on backend/node_modules; moved .vite to backend/.qa/npm-cache-eperm-20261014; npm ci succeeded",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run type-check",
+      "exitCode": 0
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "node --test frontend/tests.mjs",
+      "exitCode": 0
+    }
+  ]
+}

@@ -29,6 +29,14 @@ export function errorHandler(logger: Logger): ErrorRequestHandler {
       return;
     }
 
+    if (typeof error === 'object' && error !== null && 'type' in error &&
+      (error.type === 'entity.parse.failed' || error.type === 'entity.too.large')) {
+      response.status(error.type === 'entity.too.large' ? 413 : 400).json({ error: {
+        code: 'INVALID_REQUEST_BODY', message: 'Nội dung yêu cầu không hợp lệ hoặc quá lớn.', details: [], requestId: request.requestId,
+      } });
+      return;
+    }
+
     logger.error({ requestId: request.requestId, code: 'UNHANDLED_ERROR' }, 'request_failed');
     response.status(500).json({
       error: {

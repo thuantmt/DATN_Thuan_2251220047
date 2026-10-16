@@ -20,11 +20,24 @@ const environmentSchema = z.object({
   ACCESS_TOKEN_TTL: z.string().default('15m'),
   REFRESH_TOKEN_TTL: z.string().default('7d'),
   COOKIE_SECURE: booleanString.default(false),
+  COOKIE_SAME_SITE: z.enum(['lax', 'strict', 'none']).default('lax'),
+  SESSION_TTL_SECONDS: z.coerce.number().int().min(60).max(2_592_000).default(604800),
+  HOST: z.enum(['127.0.0.1', '0.0.0.0']).default('127.0.0.1'),
+  TRUST_PROXY_HOPS: z.coerce.number().int().min(0).max(2).default(0),
   GEMINI_API_KEY: z.string().default(''),
   GEMINI_MODEL: z.string().default(''),
   GEMINI_TIMEOUT_MS: z.coerce.number().int().min(1_000).max(120_000).default(30_000),
   GEMINI_MAX_RETRIES: z.coerce.number().int().min(0).max(3).default(1),
   LOG_LEVEL: z.enum(['fatal', 'error', 'warn', 'info', 'debug', 'trace', 'silent']).default('info'),
+}).superRefine((value, context) => {
+  if ((value.NODE_ENV === 'production' || value.COOKIE_SAME_SITE === 'none') && !value.COOKIE_SECURE) {
+    context.addIssue({ code: 'custom', path: ['COOKIE_SECURE'], message: 'Cookie production/cross-site cần HTTPS.' });
+  }
+  let url: URL;
+  try { url = new URL(value.FRONTEND_ORIGIN); } catch { return; }
+  if (url.origin !== value.FRONTEND_ORIGIN || (value.NODE_ENV === 'production' && url.protocol !== 'https:')) {
+    context.addIssue({ code: 'custom', path: ['FRONTEND_ORIGIN'], message: 'Origin phải chính xác; production cần HTTPS.' });
+  }
 });
 
 export type Environment = z.infer<typeof environmentSchema>;

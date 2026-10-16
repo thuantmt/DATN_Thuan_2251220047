@@ -1,3 +1,7 @@
+## Cập nhật Tuần 3 ngày 14/10/2026
+
+Đã bổ sung User, MongoDB session, API xác thực và RBAC trong backend; React tích hợp đăng ký, đăng nhập, khôi phục phiên và dashboard. Demo Writing giữ riêng tại `/demo`, không gắn dữ liệu localStorage với tài khoản thật. Atlas chưa nghiệm thu do lỗi DNS hệ thống và lỗi TLS khi thử resolver riêng; chưa deploy hoặc tích hợp AI. Xem [hướng dẫn chạy và triển khai](docs/week3-deployment.md) và [thiết kế xác thực](backend/docs/authentication.md). Các phần bên dưới là lịch sử triển khai.
+
 # IELTS Writing Week 1
 
 ## Cập nhật backend ngày 23 tháng 09 năm 2026

@@ -17,3 +17,10 @@ body{background:var(--canvas);color:var(--ink)}
 @media(max-width:1000px){.target-note{display:none}.workspace-focus{grid-template-columns:minmax(0,1.2fr) minmax(330px,.8fr)}.app-shell{padding-left:18px;padding-right:18px}.topbar-inner{padding:0 18px}.topbar nav{justify-content:flex-start}.assistant-shell{min-height:680px}}
 @media(max-width:800px){.topbar-inner{height:auto;padding-top:12px}.nav-link{height:48px}.practice-toolbar{flex-wrap:wrap}.timer-card{margin-left:auto}.workspace-focus{grid-template-columns:1fr}.assistant-shell{min-height:0}.assistant-content{max-height:none}.editor-panel{min-height:480px}.scope-note{margin-top:6px}.prompt-heading h1{font-size:18px}}
 @media(max-width:540px){.topbar-end .notification-button,.user-avatar{display:none}.practice-toolbar{align-items:stretch}.task-switcher{width:100%}.task-switcher button{flex:1;justify-content:center}.task-switcher button small{display:none}.timer-card{margin-left:0}.prompt-panel{padding:15px}.prompt-heading{display:block}.snapshot-pill{display:inline-block;margin-bottom:10px}.topic-field{grid-template-columns:1fr;gap:6px}.editor-bottom{align-items:flex-start;flex-direction:column}.action-row{width:100%}.action-row button{flex:1}.simulation-banner{align-items:flex-start;flex-direction:column}.assistant-content{padding:13px}.version-line{align-items:flex-start;gap:8px}.chat-heading{align-items:flex-start;flex-direction:column}.topbar select{max-width:90px}}
+.auth-shell { max-width: 850px; margin: 2rem auto; }
+.auth-card { background: white; border: 1px solid #dce3ed; border-radius: 12px; padding: 2rem; margin-top: 1.5rem; }
+.auth-card form { display: grid; gap: 1rem; }
+.auth-card label { display: grid; gap: .4rem; font-weight: 600; }
+.auth-card input { width: 100%; padding: .8rem; border: 1px solid #879bb3; border-radius: 6px; box-sizing: border-box; }
+.auth-card button { margin: .4rem 0; }
+.auth-demo-bar { padding: .8rem; background: #edf4ff; display: flex; flex-wrap: wrap; gap: 1rem; }

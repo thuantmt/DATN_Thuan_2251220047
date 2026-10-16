@@ -1,3 +1,7 @@
+## Quyết định Tuần 3 ngày 14/10/2026
+
+Mở rộng phạm vi theo yêu cầu người dùng sang backend, database, auth và RBAC. Giữ React hiện có và tách demo Writing ở `/demo`. Chọn opaque session lưu MongoDB thay JWT để khôi phục phiên bằng HttpOnly cookie và thu hồi server khi logout. Không triển khai backend bài viết hoặc AI. Quyết định, ma trận quyền và giới hạn vận hành nằm trong [thiết kế xác thực](../backend/docs/authentication.md).
+
 # Quyết định kỹ thuật tuần 1
 
 Ngày 14/09/2026. Đây là quyết định thiết kế ban đầu, không phải kết quả được GVHD phê duyệt.

@@ -1,0 +1,12 @@
+
+> ielts-writing-frontend@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.0 D:/01_CongNgheThongTin/09_DoAnTotNghiep/frontend/react
+
+
+ Test Files  3 passed (3)
+      Tests  17 passed (17)
+   Start at  21:16:02
+   Duration  6.20s (environment 45%, tests 32%, setup 12%, transform 8%, import 3%)

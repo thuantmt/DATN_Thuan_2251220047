@@ -1,3 +1,7 @@
+## Cập nhật Tuần 3 ngày 14/10/2026
+
+Trang chính dùng backend thật: `/login`, `/register` và `/<role>/dashboard`. Vite proxy `/api/v1` tới port 3000. Demo cũ giữ tại `/demo`, dùng localStorage độc lập. Xem [hướng dẫn cấu hình](../../docs/week3-deployment.md). Phần dưới mô tả demo trước tích hợp auth.
+
 # Frontend React cho IELTS Writing Coach
 
 Ứng dụng React + TypeScript + Vite + CSS đã chuyển các màn hình luyện viết, lịch sử, tiến độ, giáo viên và quản trị từ demo. Đây chỉ là frontend, dùng localStorage và phản hồi mô phỏng; không có backend, đăng nhập thật, API AI hoặc band score.

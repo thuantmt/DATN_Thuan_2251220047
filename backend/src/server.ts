@@ -1,22 +1,27 @@
 import type { Server } from 'node:http';
+import mongoose from 'mongoose';
 import { createApp } from './app.js';
 import { loadEnvironment } from './config/environment.js';
 import { connectDatabase, databaseProbe, disconnectDatabase } from './database/mongoose.js';
 import { createLogger } from './shared/logger.js';
+import { ensureAuthIndexes } from './auth/models.js';
 
 async function bootstrap(): Promise<void> {
   const environment = loadEnvironment();
   const logger = createLogger(environment);
   await connectDatabase(environment, logger);
+  await ensureAuthIndexes();
 
   const app = createApp({
     database: databaseProbe,
     frontendOrigin: environment.FRONTEND_ORIGIN,
     logger,
+    trustProxyHops: environment.TRUST_PROXY_HOPS,
+    auth: { secure: environment.COOKIE_SECURE, sameSite: environment.COOKIE_SAME_SITE, sessionSeconds: environment.SESSION_TTL_SECONDS },
   });
 
-  const server = app.listen(environment.PORT, '127.0.0.1', () => {
-    logger.info({ port: environment.PORT, host: '127.0.0.1' }, 'server_started');
+  const server = app.listen(environment.PORT, environment.HOST, () => {
+    logger.info({ port: environment.PORT, host: environment.HOST }, 'server_started');
   });
 
   registerShutdown(server, logger);
@@ -37,7 +42,8 @@ function registerShutdown(server: Server, logger: ReturnType<typeof createLogger
   process.once('SIGTERM', () => { void shutdown('SIGTERM'); });
 }
 
-void bootstrap().catch(() => {
+void bootstrap().catch(async () => {
+  await mongoose.disconnect();
   process.stderr.write('Backend initialization failed. Check environment and MongoDB Atlas configuration.\n');
   process.exitCode = 1;
 });

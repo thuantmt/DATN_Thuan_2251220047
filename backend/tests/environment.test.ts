@@ -2,6 +2,12 @@ import { describe, expect, it } from 'vitest';
 import { ConfigurationError, parseEnvironment } from '../src/config/environment.js';
 
 describe('environment validation', () => {
+  it('requires secure HTTPS configuration in production', () => {
+    expect(() => parseEnvironment({ NODE_ENV: 'production', MONGODB_URI: 'mongodb://127.0.0.1/test' })).toThrow(ConfigurationError);
+    expect(() => parseEnvironment({ MONGODB_URI: 'mongodb://127.0.0.1/test', COOKIE_SAME_SITE: 'none' })).toThrow(ConfigurationError);
+    expect(() => parseEnvironment({ MONGODB_URI: 'mongodb://127.0.0.1/test', FRONTEND_ORIGIN: 'invalid' })).toThrow(ConfigurationError);
+    expect(parseEnvironment({ NODE_ENV: 'production', MONGODB_URI: 'mongodb://127.0.0.1/test', COOKIE_SECURE: 'true', FRONTEND_ORIGIN: 'https://app.example.test' }).COOKIE_SECURE).toBe(true);
+  });
   it('accepts Atlas configuration and applies safe defaults', () => {
     const environment = parseEnvironment({
       MONGODB_URI: 'mongodb+srv://example.invalid/ielts_writing',

@@ -3,7 +3,12 @@
     "id": "FR01",
     "name": "Tài khoản và phân quyền",
     "acceptance": "Đăng nhập; phân biệt người học, giáo viên, quản trị; từ chối API sai quyền.",
-    "status": "specified_not_implemented"
+    "status": "implemented_tested_isolated_database_pending_atlas_and_browser_acceptance",
+    "evidence": [
+      "results/week3-verification.json",
+      "results/week3-backend-tests.txt",
+      "results/week3-frontend-tests.txt"
+    ]
   },
   {
     "id": "FR02",

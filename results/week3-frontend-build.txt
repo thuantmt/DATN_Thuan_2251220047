@@ -1,0 +1,17 @@
+
+> ielts-writing-frontend@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 30 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                           0.57 kB │ gzip:  0.38 kB
+dist/assets/T1-BAR-01-D5a_pOaa.png       36.24 kB
+dist/assets/T1-LINE-02-Omq59Fg4.png      45.66 kB
+dist/assets/T1-PROCESS-03-BM9Mfixk.png   48.12 kB
+dist/assets/index-CwpUELSU.css           26.26 kB │ gzip:  6.72 kB
+dist/assets/index-DFSxd_md.js           260.78 kB │ gzip: 80.84 kB
+
+✓ built in 641ms

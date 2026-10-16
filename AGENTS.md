@@ -6,10 +6,10 @@
 
 ## Phạm vi đang được phép làm
 
-- Hiện chỉ phát triển **frontend**. Chưa xây backend, cơ sở dữ liệu, đăng nhập và phân quyền server, hay kết nối API của mô hình AI.
+- Phạm vi Tuần 3 được mở rộng theo yêu cầu ngày 14/10/2026: frontend, backend Express–TypeScript, MongoDB, xác thực và phân quyền server. Chưa kết nối API mô hình AI hoặc xây CRUD bài viết hoàn chỉnh.
 - Công nghệ frontend đích: **React, TypeScript, Vite và CSS**. Giao diện hiện có trong `frontend/` dùng HTML, CSS và JavaScript module, là bản demo để tham chiếu thiết kế và luồng chức năng. Khi được yêu cầu triển khai frontend đích, chuyển đổi từng màn hình sang React và TypeScript; không xóa bản demo hay thay đổi toàn bộ kiến trúc trong một lần.
 - `frontend/store.mjs` hiện lưu dữ liệu bằng `localStorage`. `frontend/mock-ai.mjs` chỉ mô phỏng khu vực phản hồi và hội thoại; không tính band score và không xác nhận lỗi thực tế. Không mô tả các kết quả này là AI thật.
-- Không tạo backend, bảng dữ liệu, endpoint giả dưới danh nghĩa API thật, hoặc tự gọi dịch vụ AI khi chưa có yêu cầu mới. Không đưa khóa API vào mã frontend.
+- Được tạo User và phiên xác thực cùng API thật cho Tuần 3; không trình bày mock là API thật hoặc tự gọi dịch vụ AI. Không đưa khóa API vào mã frontend.
 
 ## Yêu cầu sản phẩm
 
